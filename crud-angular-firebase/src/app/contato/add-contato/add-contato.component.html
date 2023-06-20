@@ -1,6 +1,6 @@
 <div class="pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Adicionar Contato</h2>
+  <h2 class="h2">Adicionar jogos</h2>
 
 </div>
 
@@ -42,13 +42,13 @@
 
             [ngClass]="{'text-danger': idade?.touched && idade?.invalid}"
 
-            for="idade" class="form-label">Idade</label>
+            for="idade" class="form-label">prdutora</label>
 
           <input
 
-            [ngClass]="{'is-invalid': idade?.touched && idade?.invalid, 'is-valid': idade?.touched && idade?.valid}"
+            [ngClass]="{'is-invalid': idade?.touched && idade?.invalid, 'is   -valid': idade?.touched && idade?.valid}"
 
-            type="number"
+            type="text"
 
             formControlName="idade"
 
@@ -59,7 +59,7 @@
           />
 
 
-          <div class="invalid-feedback"><sup>*</sup>Idade obrigatório</div>
+          <div class="invalid-feedback"><sup>*</sup>produtora obrigatório</div>
 
         </div>
 
@@ -73,7 +73,7 @@
 
             [ngClass]="{'text-danger': telefone?.touched && telefone?.invalid}"
 
-            for="telefone" class="form-label">Telefone:</label>
+            for="telefone" class="form-label">precisa de disco rigido?</label>
 
           <input
 
@@ -89,7 +89,7 @@
 
           />
 
-          <div class="invalid-feedback"><sup>*</sup>Informe apenas números</div>
+          <div class="invalid-feedback"><sup>*</sup>Informe se precisa de disco rigido</div>
 
         </div>
 
@@ -105,7 +105,7 @@
 
         <button type="submit" class="btn btn-success mx-2" [disabled]="!contatoForm.valid">
 
-          Adicionar Contato
+          Adicionar Jogo
 
         </button>
 
