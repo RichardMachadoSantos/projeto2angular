@@ -35,7 +35,7 @@ export class EditContatoComponent implements OnInit{
     return this.fb.group({
       nome: new FormControl('', Validators.required),
       idade: new FormControl('', Validators.required),
-      telefone: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
+      telefone: new FormControl('', Validators.required,)
     });
   }
 

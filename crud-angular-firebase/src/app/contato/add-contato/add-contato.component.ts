@@ -49,6 +49,7 @@ export class AddContatoComponent implements OnInit{
 
         telefone: new FormControl('', [Validators.required])
 
+
       });
 
     }
@@ -85,6 +86,8 @@ export class AddContatoComponent implements OnInit{
     get telefone(){
 
       return this.contatoForm.get('telefone');
+
+
     }
 
 }
